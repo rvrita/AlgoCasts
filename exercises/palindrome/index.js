@@ -15,6 +15,11 @@ function palindrome(str) {
     }
   }
   return true;
+  /*
+  return str.split('').every((char,i) => {
+    return char === str[str.length-1-i];
+  })
+  */
 }
 
 module.exports = palindrome;
